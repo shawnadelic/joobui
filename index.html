@@ -1,0 +1,19 @@
+<doctype !html>
+<html ng-app='root'>
+  <head>
+    <script src="https://code.angularjs.org/1.4.7/angular.js"></script>
+    <script src="app.js"></script>
+    <style>
+      .lyrics-body {
+        min-width: 500px;
+        min-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-controller='index'>
+      <textarea ng-model='main' ng-change='change()' placeholder='Write your lyrics here' class='lyrics-body'></textarea>
+      <p>{{ hello }}</p>
+    </div>
+  </body>
+</html>
